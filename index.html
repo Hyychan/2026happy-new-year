@@ -810,10 +810,14 @@
                 emoji: "🎁",
                 blessings: [
                     "2026年，所有的美好会如约而至，所有的幸运会不期而遇~",
-                    "2026年，你所有的等待都不被辜负，所有的坚持都有意义！",
-                    "2026年，你所有的努力都有回报，所有的期待都有回响！",
-                    "新的一年，万事胜意，平安喜乐，心想事成！",
-                    "新的一年，愿你保持热爱，奔赴下一场山海！"
+                    "2026年，你所有的等待都不被辜负，所有的坚持都有意义~",
+                    "2026年，你所有的努力都有回报，所有的期待都有回响~",
+                    "2026年，所愿皆顺遂，平安喜乐、心想事成！",
+                    "2026年，你撒向生活的种子，都会找到自己的春天！",
+                    "2026年，在细水长流的生活中沉淀智慧、更添从容！",
+                    "2026年，日子细水长流，生活只添甘醇不添愁。",
+                    "2026年，吃得好睡得香，烦恼统统清零！",
+                    "2026年，你描绘的蓝图，世界正悄悄备料。"
                 ]
             }
         };
@@ -1125,11 +1129,11 @@
                 
                 oscillator.type = 'sine';
                 
-                gainNode.gain.setValueAtTime(0.4, audioContext.currentTime);
-                gainNode.gain.exponentialRampToValueAtTime(0.0001, audioContext.currentTime + 2.5);
+                gainNode.gain.setValueAtTime(0.5, audioContext.currentTime);
+                gainNode.gain.exponentialRampToValueAtTime(0.0001, audioContext.currentTime + 3);
                 
                 oscillator.start(audioContext.currentTime);
-                oscillator.stop(audioContext.currentTime + 2.5);
+                oscillator.stop(audioContext.currentTime + 3);
             } catch (e) {
                 // 静默处理
             }
@@ -1237,4 +1241,5 @@
         });
     </script>
 </body>
+
 </html>
