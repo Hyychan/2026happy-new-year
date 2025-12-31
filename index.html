@@ -638,17 +638,17 @@
             </div>
             
             <!-- 步骤1：选择类别 -->
-            <div class="step">第①步：选择你的心愿类别</div>
+            <div class="step">👇选择你的心愿类别</div>
             
             <div class="categories-grid" id="categoriesGrid">
                 <!-- 类别按钮由JS动态生成 -->
             </div>
             
             <!-- 步骤2：可选心愿 -->
-            <div class="step">第②步：可选 - 写下具体心愿</div>
+            <div class="step">👇写下你的具体心愿（选填）</div>
             <input type="text" class="optional-input" id="wishDetail" 
-                   placeholder="例如：考上研究生、遇见对的人、年入百万...（选填）" 
-                   maxlength="50">
+                   placeholder="例如：暴富、头发浓密、论文秒过、遇见对的人...（选填）" 
+                   maxlength="45">
             
             <!-- 获取祝福按钮 -->
             <button class="action-btn" id="getAnswerBtn" disabled>
@@ -735,8 +735,8 @@
                     "2026年，遇见满眼都是你的人，谈一场双向奔赴的甜蜜恋爱！",
                     "灵魂伴侣即将出现，新年里爱情甜蜜指数爆表，每天都是情人节！",
                     "与爱的人感情持续升温，2026年默契度满分，成为人人羡慕的神仙眷侣！",
-                    "吸引力法则全面生效，新年里你的真爱正向你飞奔而来！",
-                    "姻缘天注定，2026年遇见想要共度一生的那个人，开启幸福新篇章！"
+                    "吸引力法则全面生效，2026年你的真爱正向你飞奔而来！",
+                    "缘分天注定，2026年遇见想要共度一生的那个人，开启幸福新篇章！"
                 ]
             },
             family: {
@@ -747,7 +747,10 @@
                     "家人健康平安喜乐，新年全家福照片又添新成员，喜事连连！",
                     "家族运势持续上升，2026年每个家庭成员都发展得越来越好！",
                     "家庭财富稳健积累，新年里换大房子换新车都轻松实现！",
-                    "亲子关系融洽升级，2026年与家人沟通无碍，理解倍增，亲情更浓！"
+                    "2026年，亲人常团圆，好事常敲门，平安常驻家~",
+                    "2026年，烦恼不过夜，矛盾不隔月，温暖不换季。",
+                    "2026年，家里三餐有味，四季有景，五福有份。",
+                    "亲子关系融洽幸福，2026年与家人沟通无碍，理解倍增，亲情更浓！"
                 ]
             },
             social: {
@@ -1130,10 +1133,10 @@
                 oscillator.type = 'sine';
                 
                 gainNode.gain.setValueAtTime(0.5, audioContext.currentTime);
-                gainNode.gain.exponentialRampToValueAtTime(0.0001, audioContext.currentTime + 3);
+                gainNode.gain.exponentialRampToValueAtTime(0.001, audioContext.currentTime + 2.8);
                 
                 oscillator.start(audioContext.currentTime);
-                oscillator.stop(audioContext.currentTime + 3);
+                oscillator.stop(audioContext.currentTime + 2.8);
             } catch (e) {
                 // 静默处理
             }
@@ -1243,3 +1246,4 @@
 </body>
 
 </html>
+
