@@ -422,6 +422,7 @@
             flex: 1;
             margin: 0;
             padding: 20px;
+            font-size: 1rem;
         }
         
         /* 分享按钮特殊样式 */
@@ -1150,12 +1151,12 @@
             const wishText = wishDetail ? `"${wishDetail}"` : `"${category}"心愿`;
             const currentYear = new Date().getFullYear() + 1;
             
-            const shareText = `📖 我在《${currentYear}答案之书》许下心愿：${wishText}\n\n${emoji} ${category}\n✨ 得到的${currentYear}新年专属祝福：\n${blessing} ${emoji}\n\n🎉 新年新气象！你也来选择心愿类别，获取专属祝福吧！`;
+            const shareText = `📖 我在ChangeSeeu的《2026答案之书》里许下心愿：${wishText}\n\n${emoji} ${category}\n✨ 我得到的2026新年专属祝福：\n${blessing} ${emoji}\n\nhttps://hyychan.github.io/2026happy-new-year/\n\n🎉 新年新气象！你也来许下心愿👆，获取专属祝福吧！`;
             
             // 优先使用Web Share API
             if (navigator.share) {
                 navigator.share({
-                    title: `我的${currentYear}新年祝福`,
+                    title: `我的2026新年祝福`,
                     text: shareText,
                     url: window.location.href
                 }).catch(() => {
