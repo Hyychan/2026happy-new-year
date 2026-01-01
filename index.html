@@ -681,7 +681,7 @@
             
             <!-- 分享提示 -->
             <div class="share-hint" id="shareHint">
-                💡 长按祝福文字，选择"复制"，即可分享到微信！
+                💡 点击"分享祝福"，即可分享到微信！
             </div>
         </div>
         
@@ -1185,7 +1185,7 @@
                     prompt('请复制以下文字分享给朋友：', text);
                 }
             } catch (err) {
-                fallbackCopy(text);   // 已经会复制到剪贴板
+                fallbackCopy(text);   // 已经复制到剪贴板
                 showMessage('✨ 新年祝福已复制！快去微信粘贴分享吧！');
             }
             
@@ -1248,5 +1248,4 @@
 </body>
 
 </html>
-
 
